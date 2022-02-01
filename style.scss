@@ -1,0 +1,116 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+}
+
+$clr-soft-blue: hsl(215, 51%, 70%);
+$clr-Cyan: hsl(178, 100%, 50%);
+$clr-Very-dark-blue-1: hsl(217, 54%, 11%);
+$clr-Very-dark-blue-2: hsl(216, 50%, 16%);
+$clr-Very-dark-blue-3: hsl(216, 50%, 16%); //(card BG)
+$clr-Very-dark-blue-4: #889fbf; //line
+$clr-White: hsl(0, 0%, 100%);
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $clr-Very-dark-blue-1;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $clr-Very-dark-blue-3;
+  height: 33rem;
+  width: 20.1875rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  //   margin-top: 5rem;
+  .main-image {
+    width: 17.3125rem;
+    height: 17.3125rem;
+    border-radius: 1rem;
+    // margin-top: 0.5rem;
+  }
+  .heading {
+    color: $clr-White;
+    font-size: 1.2rem;
+    margin-right: auto;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+  .stats {
+    display: flex;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+  .description {
+    color: $clr-Very-dark-blue-4;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 1rem;
+  }
+
+  .price {
+    color: $clr-Cyan;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 0.4rem;
+  }
+  .clock {
+    margin-left: auto;
+  }
+  .time-left {
+    color: $clr-Very-dark-blue-4;
+    font-size: 1rem;
+    margin-left: 0.4rem;
+
+    font-weight: 400;
+  }
+}
+
+.creator {
+  display: flex;
+  border-top: 1px solid $clr-Very-dark-blue-4;
+  width: 100%;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+  //   justify-content: center;
+  .creator-image {
+    height: 2.0625rem;
+    width: 2.0625rem;
+    border-radius: 50%;
+    border: 1px solid $clr-White;
+    margin-top: 1rem;
+  }
+  .creator-name {
+    color: $clr-Very-dark-blue-4;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  span {
+    color: $clr-White;
+    // display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+.attribution {
+  margin-top: 1rem;
+}
